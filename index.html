@@ -3,59 +3,144 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ZoneRun Treadmill – Support</title>
-<style>
-  :root { color-scheme: light dark; }
-  body { font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 720px;
-         margin: 0 auto; padding: 48px 24px 80px; }
-  h1 { font-size: 32px; margin-bottom: 4px; }
-  h2 { font-size: 21px; margin-top: 36px; }
-  h3 { font-size: 17px; margin: 22px 0 4px; }
-  p { margin: 4px 0 10px; }
-  .muted { opacity: 0.65; }
-  .contact { padding: 16px 20px; border-radius: 14px; background: rgba(127,127,127,0.12); }
-</style>
+<title>ZoneRun Treadmill – Heart rate zone training for Bluetooth treadmills</title>
+<meta name="description" content="ZoneRun steers your Bluetooth treadmill's speed to keep your heart rate in zone.">
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>ZoneRun Treadmill</h1>
-<p class="muted">Heart-rate-zone training for Bluetooth treadmills.</p>
+<nav>
+  <div class="wrap">
+    <img src="icon.png" alt="">
+    <span class="name rounded">ZoneRun</span>
+    <a class="link" href="#features">Features</a>
+    <a class="link" href="#support">Support</a>
+    <a class="link" href="privacy.html">Privacy</a>
+  </div>
+</nav>
 
-<div class="contact">
-  <strong>Need help?</strong> Email <a href="mailto:business@simonferns.com?subject=ZoneRun%20support">business@simonferns.com</a>.
-  Include your iPhone model, iOS version and treadmill model and we'll get back to you within two working days.
-</div>
+<header class="hero">
+  <div class="wrap">
+    <img class="icon" src="icon.png" alt="ZoneRun app icon">
+    <h1>ZoneRun Treadmill</h1>
+    <p class="tagline">Your treadmill, on autopilot. ZoneRun steers the belt speed to keep your heart rate in zone.</p>
+    <div class="upnext" style="margin-top:34px">STEP 5/12 · 2:23 LEFT · ROUND 2/4</div>
+    <div class="zone-line rounded">Zone 3 @ 10.1 km/h</div>
+    <div class="steps">
+      <span class="z1"></span><span class="z2"></span><span class="z3"></span><span class="z1"></span>
+      <span class="active"></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="buttons">
+      <a class="btn" href="ZoneRun-App-Review.pdf">Feature guide (PDF)</a>
+      <a class="btn secondary" href="#support">Get support</a>
+    </div>
+  </div>
+</header>
 
-<h2>Frequently asked questions</h2>
+<section>
+  <div>
+    <div class="gallery">
+      <img src="screens/01-live.png" alt="Live run: your treadmill, on autopilot">
+      <img src="screens/02-run.png" alt="Run tab: pick a workout, press start">
+      <img src="screens/03-workouts.png" alt="Workouts: build zone workouts">
+      <img src="screens/04-route.png" alt="Routes: race routes with real hills">
+      <img src="screens/05-profile.png" alt="Profile: watch your speed climb">
+      <img src="screens/06-calibration.png" alt="Weekly calibration">
+    </div>
+  </div>
+</section>
 
-<h3>What do I need to use ZoneRun?</h3>
-<p>A treadmill that supports Bluetooth FTMS (Fitness Machine Service) and a Bluetooth heart rate monitor, such as a
-chest strap or arm band.</p>
+<section id="features">
+  <div class="wrap">
+    <h2 class="section-title">Everything runs itself</h2>
+    <p class="section-sub">Pick a workout, press start and focus on running.</p>
+    <div class="grid">
+      <div class="card"><div class="dot bg-z3">❤️</div><h3>Automatic speed</h3>
+        <p>ZoneRun nudges the belt up or down whenever your heart rate leaves the zone.</p></div>
+      <div class="card"><div class="dot bg-z4">🧱</div><h3>Zone workouts</h3>
+        <p>Build workouts from blocks and repeats. Every step is a heart rate zone with an optional incline.</p></div>
+      <div class="card"><div class="dot bg-z2">🎯</div><h3>Weekly calibration</h3>
+        <p>A 25 minute run learns your speed in each zone, so every workout starts at the right pace.</p></div>
+      <div class="card"><div class="dot bg-z3">🗺️</div><h3>GPX routes</h3>
+        <p>Import a race route and the treadmill incline follows its hills, grade-adjusted to stay in zone.</p></div>
+      <div class="card"><div class="dot bg-z5">📈</div><h3>See your progress</h3>
+        <p>Grade-adjusted speed per zone, run history and calibration trends on the Profile tab.</p></div>
+      <div class="card"><div class="dot bg-z1">🔊</div><h3>Voice coaching</h3>
+        <p>Spoken cues for step changes, countdowns, hills, splits and speed changes, over your music.</p></div>
+      <div class="card"><div class="dot bg-z5">🩺</div><h3>Apple Health</h3>
+        <p>Every run is saved as an indoor running workout with heart rate, distance, speed, energy and climb.</p></div>
+      <div class="card"><div class="dot bg-z2">📡</div><h3>Works with your gear</h3>
+        <p>Any Bluetooth FTMS treadmill and any Bluetooth heart rate monitor, chest strap or arm band.</p></div>
+      <div class="card">
+        <div class="zones">
+          <span style="height:35%;background:var(--z1)"></span><span style="height:48%;background:var(--z2)"></span>
+          <span style="height:61%;background:var(--z3)"></span><span style="height:74%;background:var(--z4)"></span>
+          <span style="height:87%;background:var(--z5)"></span>
+        </div>
+        <ul class="zone-rows">
+          <li><i style="background:var(--z1)"></i><b>Zone 1</b><em>7.2 km/h</em></li>
+          <li><i style="background:var(--z3)"></i><b>Zone 3</b><em>10.1 km/h</em></li>
+          <li><i style="background:var(--z5)"></i><b>Zone 5</b><em>12.6 km/h</em></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
-<h3>My treadmill doesn't show up.</h3>
-<p>Make sure Bluetooth is on and the treadmill isn't connected to another app (for example the manufacturer's app,
-Zwift or Kinomap). Close those apps, then tap Scan on the Connect devices screen. Some treadmills only advertise
-Bluetooth while their console is awake.</p>
+<section>
+  <div class="wrap">
+    <div class="card" style="display:flex;gap:24px;align-items:center;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <h2 class="section-title" style="font-size:26px">Feature guide</h2>
+        <p style="color:var(--secondary);margin:0">Every feature, page by page, with screenshots. Made for App Review and
+          anyone who wants to see the app before connecting a treadmill.</p>
+      </div>
+      <a class="btn" href="ZoneRun-App-Review.pdf">Download PDF</a>
+    </div>
+  </div>
+</section>
 
-<h3>The speed doesn't change automatically.</h3>
-<p>Your treadmill must allow speed control over FTMS. ZoneRun shows "speed control" under the treadmill name when it
-does. Some treadmills require you to press start on the console before they accept speed changes.</p>
+<section id="support">
+  <div class="wrap">
+    <h2 class="section-title">Support</h2>
+    <p class="section-sub">Answers to common questions, or get in touch.</p>
+    <div class="banner">
+      <span>✉️</span>
+      <span>Email <a href="mailto:business@simonferns.com?subject=ZoneRun%20support">business@simonferns.com</a>
+        with your iPhone model, iOS version and treadmill model. We reply within two working days.</span>
+    </div>
+    <div style="height:20px"></div>
+    <div class="list">
+      <details><summary>What do I need to use ZoneRun?</summary>
+        <p>A treadmill that supports Bluetooth FTMS (Fitness Machine Service) and a Bluetooth heart rate monitor, such
+          as a chest strap or arm band.</p></details>
+      <details><summary>My treadmill doesn't show up</summary>
+        <p>Make sure Bluetooth is on and the treadmill isn't connected to another app, such as the manufacturer's app,
+          Zwift or Kinomap. Close those apps, then tap Scan on the Connect devices screen. Some treadmills only
+          advertise Bluetooth while their console is awake.</p></details>
+      <details><summary>The speed doesn't change automatically</summary>
+        <p>Your treadmill must allow speed control over FTMS. ZoneRun shows "speed control" under the treadmill name
+          when it does. Some treadmills need you to press start on the console before they accept speed changes.</p></details>
+      <details><summary>Why are workouts locked?</summary>
+        <p>ZoneRun needs one calibration run to learn your speed in each heart rate zone. Start it from the Run tab.
+          It takes 25 minutes: 5 minutes in each zone.</p></details>
+      <details><summary>How do I change my heart rate zones?</summary>
+        <p>Go to Profile › Heart rate zones. Set your maximum heart rate to reset all zones, or adjust each zone on its
+          own.</p></details>
+      <details><summary>My runs aren't in Apple Health</summary>
+        <p>Open Settings › Health › Data Access &amp; Devices › ZoneRun and turn on all categories.</p></details>
+      <details><summary>Is it safe?</summary>
+        <p>Your treadmill's stop button and safety key always take priority. If the belt stops, the safety key is
+          pulled or the treadmill disconnects, ZoneRun stops controlling the speed until you resume.</p></details>
+    </div>
+    <p class="footnote">ZoneRun has no accounts, analytics or ads. Read the <a href="privacy.html">privacy policy</a>.</p>
+  </div>
+</section>
 
-<h3>Why are workouts locked?</h3>
-<p>ZoneRun needs one calibration run to learn your speed in each heart rate zone. Start it from the Run tab. It takes
-25 minutes: 5 minutes in each zone.</p>
-
-<h3>How do I change my heart rate zones?</h3>
-<p>Go to Profile › Heart rate zones. Set your maximum heart rate to reset all zones, or adjust each zone on its own.</p>
-
-<h3>My runs aren't in Apple Health.</h3>
-<p>Open Settings › Health › Data Access &amp; Devices › ZoneRun and turn on all categories.</p>
-
-<h3>Is it safe?</h3>
-<p>Your treadmill's stop button and safety key always take priority. If the belt stops, the safety key is pulled or the
-treadmill disconnects, ZoneRun stops controlling the speed until you resume.</p>
-
-<h2>Privacy</h2>
-<p>ZoneRun has no accounts, analytics or ads, and your data stays on your iPhone and in Apple Health.
-Read the <a href="privacy.html">privacy policy</a>.</p>
+<footer>
+  <a href="#support">Support</a><a href="privacy.html">Privacy Policy</a><a href="ZoneRun-App-Review.pdf">Feature guide</a>
+  <div style="margin-top:12px">© 2026 ZoneRun</div>
+</footer>
 </body>
 </html>
